@@ -1,20 +1,7 @@
-import React, { useState } from 'react';
+import React from "react";
 
 function FileUpload() {
-  const [file, setFile] = useState(null);
-
-  const handleFileChange = (e) => {
-    setFile(e.target.files[0]);
-  };
-
-  return (
-    <div>
-      <h2>Upload a File</h2>
-      <input type="file" onChange={handleFileChange} />
-      {file && <p>Selected file: {file.name}</p>}
-    </div>
-  );
+  return <h2>File Upload Component</h2>;
 }
 
 export default FileUpload;
-
