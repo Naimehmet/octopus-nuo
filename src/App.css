@@ -16,3 +16,20 @@ function App() {
 
 export default App;
 
+<<<<<<< HEAD
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ 1b108f0 (Fixed App.css syntax error)
