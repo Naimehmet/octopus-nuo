@@ -1,10 +1,13 @@
 import React from "react";
-import "./App.css"; // Make sure this exists!
+import "./App.css";
+import Login from "./Login";
+import AIInterface from "./AIInterface"; // Import the AI component
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to My Awesome AI!</h1>
+      <Login />
+      <AIInterface />
     </div>
   );
 }
