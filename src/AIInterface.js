@@ -8,11 +8,6 @@ function AIInterface() {
     setFile(event.target.files[0]);
   };
 
-  const handleQuerySubmit = () => {
-    console.log("User Query:", query);
-    // This is where you call the Hugging Face API or AI backend
-  };
-
   return (
     <div className="ai-container">
       <h2>Upload Meter Image</h2>
@@ -25,7 +20,7 @@ function AIInterface() {
         placeholder="Type your query here..."
         onChange={(e) => setQuery(e.target.value)}
       />
-      <button onClick={handleQuerySubmit}>Ask</button>
+      <button>Ask</button>
     </div>
   );
 }

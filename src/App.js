@@ -1,14 +1,16 @@
 import React from "react";
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Login";
-import AIInterface from "./AIInterface"; // Import the AI component
+import AIInterface from "./AIInterface";
 
 function App() {
   return (
-    <div className="App">
-      <Login />
-      <AIInterface />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/ai" element={<AIInterface />} />
+      </Routes>
+    </Router>
   );
 }
 
